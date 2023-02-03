@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico"image/ico">
+</head>
+<body>
+    <div class="container">
+        <canvas id="game" width="608" height="608"></canvas>
+        <div class="controls">
+            <div class="control-button" id="cb1"></div>
+            <div class="control-button" id="cb2"></div>
+            <div class="control-button" id="cb3"></div> 
+            <div class="control-button" id="cb4"></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-content">
+            <form action="#" class="difficult" id="menu-form">
+                <button id="start_button">
+                    Старт
+                </button>
+                <p>Сложность:</p>
+                <input id="difficult-element" name="difficult-level" type="radio" value="easy" checked> <label for="easy">Легко</label> <br>
+                <input id="difficult-element" name="difficult-level" type="radio" value="medium"> <label for="medium">Нормально</label> <br>
+                <input id="difficult-element" name="difficult-level" type="radio" value="hard"> <label for="hard">Сложно</label> <br>
+            </form>
+        </div>
+    </div>
+    <div class="score">
+        <h1 id="score_content">
+            Score: 
+        </h1>
+    </div>
+    <script src="snake-game.js"></script>
+</body>
+</html>
